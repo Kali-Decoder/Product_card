@@ -1,0 +1,119 @@
+body{
+    display: flex;
+    justify-content: space-around;
+
+}
+.container  
+{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: 23rem 12rem;
+    border: 2px solid black;
+    width: 17rem;
+    height: 36rem;
+    border-radius: 20px  ;
+    background-color: #f2cc8f;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.img-part
+{
+    /* border: 1px solid blue; */
+    border-radius: 20px 20px 0px 0px ;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.img-part img{
+    width:fit-content;
+}
+.content-part
+{
+    /* border: 1px solid black; */
+    border-radius: 0px 0px 20px 20px ;
+    padding: 0px 16px ;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.cont1,.cont2
+{
+    display: grid;
+    grid-template-columns: 2.5rem auto;
+    column-gap: 20px;
+    
+}
+.cont1{
+    column-gap: 7rem;
+}
+.like,.counter,.price
+{
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid red;
+}
+button
+{
+    margin-top: 5px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .7s;
+    
+}
+.like{
+    margin-top: 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    /* border: 2px double black; */
+    border: none;
+    transition: .7s;
+    /* box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.7); */
+    
+}
+.counter
+{
+    width: 8rem;
+    border-radius: 10px ;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 2rem 4rem 2rem;
+    background-color: #f2cc8f;
+    border: none;
+    margin-bottom: 5px;
+}
+.text,.plus,.minus,.price
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.price{
+    width: auto;
+    border: none;
+}
+button:hover{
+    background-color: #0a9396;
+    color: black;
+}
+.like:hover{
+    background-color: #ffafcc;
+    cursor: pointer;
+   
+}
+.plus:hover,.minus:hover
+{
+    color: white;
+}
+.liking
+{
+   color: red !important;
+}
